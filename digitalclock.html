@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="./digital.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title" id="title">
+        </div>
+    </div>
+    <script>
+        function uTime()
+        {
+            var cTime = new Date()
+            var hours = cTime.getHours()
+            var minutes = cTime.getMinutes()
+            var seconds =  cTime.getSeconds()
+     
+
+        hours = (hours < 10 ? '0' : '') + hours
+         minutes = (minutes < 10 ? '0' : '') + minutes
+         seconds = (seconds< 10 ? '0' : '') + seconds
+         
+         var time = hours + ':' + minutes + ':'  + seconds 
+         
+
+         document.getElementById('title').innerHTML = time
+        }
+        
+         setInterval(uTime , 1000);
+    </script>
+</body>
+</html>

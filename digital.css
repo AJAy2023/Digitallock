@@ -1,0 +1,10 @@
+.container{
+    text-align: center;
+    margin-top: 30px;
+    background-color: antiquewhite;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 700px;
+}
